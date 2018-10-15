@@ -2,6 +2,8 @@
 #define ENGINE_H
 #include <SFML/Graphics.hpp> 
 #include "TextureHolder.h" 
+#include "Thomas.h"
+#include "Bob.h" 
 
 using namespace sf;
 
@@ -10,6 +12,10 @@ class Engine
 private:
 	// The texture holder 
 	TextureHolder th;
+
+	// Thomas and his friend, Bob
+	Thomas m_Thomas;
+	Bob m_Bob;
 
 	const int TILE_SIZE = 50;
 	const int VERTS_IN_QUAD = 4;
