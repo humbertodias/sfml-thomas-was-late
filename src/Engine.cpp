@@ -1,5 +1,4 @@
-#include "stdafx.h" 
-#include "Engine.h" 
+#include "Engine.h"
 
 Engine::Engine()
 {
@@ -11,7 +10,7 @@ Engine::Engine()
 
 	m_Window.create(VideoMode(resolution.x, resolution.y),
 		"Thomas was late",
-		Style::Fullscreen);
+		Style::Default);
 
 	// Initialize the fullscreen view 
 	m_MainView.setSize(resolution);
@@ -32,7 +31,7 @@ Engine::Engine()
 		FloatRect(0.5f, 0.001f, 0.499f, 0.998f));
 
 	m_BackgroundTexture = TextureHolder::GetTexture(
-		"graphics/background.png");
+		"res/graphics/background.png");
 
 	// Associate the sprite with the texture 
 	m_BackgroundSprite.setTexture(m_BackgroundTexture);

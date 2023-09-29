@@ -1,6 +1,6 @@
 #ifndef PLAYABLECHARACTER_H
 #define PLAYABLECHARACTER_H
-#include <SFML/Graphics.hpp> 
+#include <SFML/Graphics.hpp>
 
 using namespace sf;
 
